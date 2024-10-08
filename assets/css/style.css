@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("../fonts/Norse-Bold.otf");
+}
+
+body {
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 60;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  outline: none;
+  border: 0px;
+}
+
+.left {
+  flex: 1 1;
+  background: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.odin-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  height: 120px;
+  gap: 5px;
+  margin-top: 25vh;
+}
+
+.odin-container img {
+  height: 80%;
+}
+
+.odin-title {
+  font-family: "Norse Bold";
+  font-size: 75px;
+  color: aliceblue;
+}
+
+.credits {
+  font-size: max(0.75rem, 1vw);
+  color: #ffffff;
+  align-self: center;
+  margin-top: auto;
+}
+
+.right {
+  flex: 2 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  background-color: #fbfbfb;
+  --margin: 30px;
+}
+
+form {
+  width: 100%;
+}
+.welcome {
+  margin: 0 var(--margin);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 25px;
+  padding: var(--margin) calc(var(--margin) * 2) var(--margin) var(--margin);
+  margin-bottom: var(--margin);
+  background-color: #fff;
+  border: 0px;
+  box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin: 0;
+  width: 100%;
+}
+
+fieldset div {
+  flex: 0 0 calc((100% / 2) - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 15px;
+}
+
+fieldset div input {
+  max-width: 80%;
+  height: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid rgb(31, 31, 223);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+#email:invalid {
+  border: 1px solid red;
+}
+#phone:invalid {
+  border: 1px solid red;
+}
+
+#password:invalid {
+  border: 1px solid red;
+}
+
+form > :not(fieldset) {
+  margin: 0 var(--margin);
+}
+
+form > button {
+  margin-bottom: var(--margin);
+  color: #e5e7eb;
+  background-color: #596d48;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+h4 {
+  padding: 0;
+  font-weight: 500;
+}
+
+a {
+  color: #596d48;
+  text-decoration-line: none;
+  font-weight: 600;
+}
